@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>최정원 포트폴리오</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+    <link rel="stylesheet" href="/css/base.css">
+    <link rel="stylesheet" href="/css/common.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/xeicon.min.css">
+    <script src="//code.jquery.com/jquery-latest.js"></script>
+    <script src="/js/main.js"></script>
+    <script type="text/javascript">
+        var windowWidth = window.screen.width
+        setViewPort(windowWidth);
+        function setViewPort(w_width) {
+            if (w_width <= 359 ){
+                $("meta[name=viewport]").attr("content", "width=359, maximum-scale=2.0, user-scalable=no, target-densitydpi=medium-dpi");
+            } else {
+                $("meta[name=viewport]").attr("content", "width=device-width, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi");
+            }
+        }
+        $(window).resize(function(){
+            var windowWidth = window.screen.width
+            setViewPort(windowWidth);
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <h1 class="logo"><a href="#;">CHOI JUNG WON</a></h1>
+    </header>
+    <div id="main">
+        <section class="mv">
+            <div class="txt">
+                <p>2022</p>   
+                <figure><img src="/img/img_portfolio.png" alt="portfolio"></figure>
+            </div>
+            <div class="scroll">
+                <button type="button">scroll down</button>
+            </div>
+        </section>
+        <section class="about">
+            <div class="inner1400">
+                <div class="profile">
+                    <figure><img src="/img/img_profile.png" alt=""></figure>
+                    <div class="txt">
+                        <dl>
+                            <dt>About ME</dt>
+                            <dd>1994.12.08 <br>kycjw94@naver.com</dd>
+                            <dd>2019.03 ~ 2019.09 <br>웹퍼블리셔 UI/UX 수료</dd>
+                            <dd>2019.11 ~ 2022.02 <br>(주)웹모아 웹퍼블리셔 근무</dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="txt_con">
+                    <h3>안녕하세요! <br>웹 퍼블리셔 <strong>최정원</strong> 입니다 :)</h3>
+                    <p>간단한 유지보수부터 시작하여 전체구축까지 다양한 분야의 프로젝트를 경험해봤습니다. <br>
+                        저는 작업자들과 서로 소통하는 작업방식을 좋아합니다. <br>
+                        소통을 하므로써 프로젝트의 이해도가 높아지고 웹 사이트의 성격을 잘 표현하여 만든   <br>
+                        디자인의 감각적인 부분을 살려줄 수 있고 꼼꼼하게 짠 코드를 더해  <br>
+                        사용자가 편리하게 정보를 얻어갈 수 있는 웹 사이트를 완성할 수 있었습니다. <br>
+                        앞으로도 저의 꼼꼼함과 감각적인 부분을 살려 더 다양한 코드를 꾸며내고 싶습니다.</p>
+
+                    <p>간단한 유지보수부터 시작하여 전체구축까지 다양한 분야의 프로젝트를 경험해봤습니다. <br>
+                        사용자가 편리하게 이용할 수 있는 웹 사이트를 만들려면 각 부서의 담당자들과 얼마만큼의 소통이 이루어졌는지에 
+                        따라 정해진다고 생각합니다. 
+                        그동안 프로젝트를 진행하면서 어려운 점도 많았지만 서로 소통하며 의견을 모아 웹 사이트를 만들 수 있었습니다.
+                        앞으로도 이러한 작업 방식으로 
+
+                        앞으로도 저의 꼼꼼함과 감각적인 부분을 살려 더 다양한 코드를 꾸며내고 싶습니다.</p>
+                </div>
+            </div>
+        </section>
+        <section class="work">
+            <div class="big_tit">Work</div>
+            <div class="conBox">
+                <div class="inner1400">
+                    <ul class="listB">
+                        <li>
+                            <figure class="img"><img src="" alt=""></figure>
+                            <div class="over">
+                                <p class="tit"><!--프로젝트 제목--></p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="popBox">
+                <div class="popBg"></div>
+                <div class="con">
+                    <div class="top">
+                        <figure class="icon"><img src="/img/icon_work.png" alt="아이콘"></figure>
+                    </div>
+                    <div class="txt">
+                        <dl>
+                            <dt><!--프로젝트 제목--></dt>
+                            <dd>
+                                <ul><!--프로젝트 설명--></ul>
+                            </dd>
+                        </dl>
+                        <a href="#;" class="viewBtn" target="_blank"><span>view</span></a>
+                    </div>
+                    
+                    <div class="close"><button type="button"><i class="xi-close"></i></button></div>
+                </div>
+            </div>
+        </section>
+        <section class="contact">
+            <div class="inner1400">
+                <div class="txt">
+                    <p>Thank you <span>for watching</span></p>
+                </div>  
+                <div class="info">
+                    <a href="#;" class="email">kycjw94@naver.com</a>
+                    <p class="copy">COPYRIGHT © CHOI JUNG WON ALL RIGHTS RESERVED.</p>
+                </div>
+                <div class="circle"></div>                
+            </div>
+        </section>
+    </div>
+</body>
+</html>
