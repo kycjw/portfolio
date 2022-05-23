@@ -329,7 +329,7 @@ $(window).ready(function(){
     });
 
     function workInfo(workListB, index){
-        workListB.find(".img").find("img").attr("src","/img/"+portfolioList[index].imgName+".jpg");
+        workListB.find(".img").find("img").attr("src","img/"+portfolioList[index].imgName+".jpg");
         workListB.find(".over .tit").html(portfolioList[index].title);
     };
 
