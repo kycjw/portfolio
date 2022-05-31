@@ -13,9 +13,7 @@ font-family: 'Playfair Display', serif;
 .inner1400{width: 100%; max-width: 1400px; margin: 0 auto; position: relative; box-sizing: border-box;}
 .hiddenBox{min-width: 100%; overflow: hidden;}
 
-body{
-    background-color: #edcb50;
-}
+
 
 header{
     display: flex;
