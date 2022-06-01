@@ -660,10 +660,15 @@
     .contact{
         padding: 120px 0 60px;
     }
-    .contact .info{
-        font-size: 100px;
+    .contact .txt > p{
+        font-size: 60px;
     }
-
+    .contact .txt > p > span{
+        font-size: 24px;
+    }
+    .contact .info{
+        margin-top: 100px;
+    }
 }
 
 @media screen and (max-width:480px){
