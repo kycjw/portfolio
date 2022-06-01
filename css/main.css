@@ -657,6 +657,12 @@
         height: 60px;
         font-size: 14px;
     }
+    .contact{
+        padding: 120px 0 60px;
+    }
+    .contact .info{
+        font-size: 100px;
+    }
 
 }
 
