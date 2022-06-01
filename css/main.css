@@ -450,6 +450,7 @@
 
 
 .contact{
+    padding: 200px 0 100px;
     background-color: #f6f5ef;
     text-align: center;
     box-sizing: border-box;
@@ -485,7 +486,7 @@
 }
 .contact .info *{
     font-size: 14px;
-
+    line-height: 1.4;
 }
 .contact .info .email{
     display: block;
@@ -658,15 +659,37 @@
         font-size: 60px;
     }
     .contact .txt > p > span{
+        margin-top: 30px;
         font-size: 24px;
     }
     .contact .info{
         margin-top: 100px;
     }
+    .contact .info .email{
+        margin-bottom: 15px;
+    }
+    
+
 }
 
 @media screen and (max-width:480px){
     .work .listB > li .over .tit{
         font-size: 14px;
     }
+    .contact{
+        padding: 100px 0;
+    }
+    .contact .txt > p{
+        font-size: 40px;
+    }
+    .contact .txt > p > span{
+        font-size: 18px;
+    }
+    .contact .info{
+        margin-top: 60px;
+    }
+    .contact .info *{
+        font-size: 12px;
+    }
+    
 }
