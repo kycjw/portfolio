@@ -32,8 +32,8 @@ header .logo > a{
     font-weight: 700;
     color: #222;
     font-family: 'Cabin', sans-serif;
-    animation:letter_ani 0.8s ease forwards;
 }
+
 #main{
     padding: 0 70px;
     background-color: #edcb50;
