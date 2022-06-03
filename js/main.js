@@ -5,10 +5,6 @@ $(window).ready(function(){
     // Then we set the value in the --vh custom property to the root of the document
     document.documentElement.style.setProperty("--vh", `${vh}px`);
 
-    setTimeout(function(){
-        $("#loading_page").fadeOut(800)
-    },4000)
-
     var portfolioList = [
         {
             title : "예일이퀍먼트",
