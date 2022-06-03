@@ -320,7 +320,7 @@ $(window).ready(function(){
         popBox.show();
 
         popBox.find(".txt > dd ul").html("")
-        for(i = 0; i < (portfolioList[idx].popTxt).length; i++){ //클릭한 list의 poptxt 개수 
+        for(var i = 0; i < (portfolioList[idx].popTxt).length; i++){ //클릭한 list의 poptxt 개수 
             popBox.find(".txt dl > dd ul").append("<li>"+"<i class=xi-check-circle></i>"+portfolioList[idx].popTxt[i]+"</li>")
         }
 
