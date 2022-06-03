@@ -315,6 +315,7 @@ $(window).ready(function(){
 
     workListB.children("li").on("click", function(){
         var idx = $(this).index();
+        $("body").addClass("hiddenBox");
         popBox.find(".txt dl > dt").html("");
         popBox.find(".txt dl > dt").html(portfolioList[idx].title);
         popBox.show();
@@ -328,6 +329,7 @@ $(window).ready(function(){
         
     });
     popBox.find(".close > button").on("click", function(){
+        $("body").removeClass("hiddenBox");
         popBox.find(".txt dl > dt").html("");
         popBox.find(".txt dl > dd ul").html("")
         popBox.hide();
