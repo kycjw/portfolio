@@ -5,6 +5,11 @@ $(window).ready(function(){
     // Then we set the value in the --vh custom property to the root of the document
     document.documentElement.style.setProperty("--vh", `${vh}px`);
 
+    setTimeout(function(){
+        $("header").addClass("active")
+        $(".mv").addClass("active")
+    },500)
+
     var portfolioList = [
         {
             title : "예일이퀍먼트",

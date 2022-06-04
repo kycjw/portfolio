@@ -14,6 +14,48 @@ font-family: 'Playfair Display', serif;
 .inner1400{width: 100%; max-width: 1400px; margin: 0 auto; position: relative; box-sizing: border-box;}
 .hiddenBox{min-width: 100%; overflow: hidden;}
 
+/* 애니메이션 효과 */
+@keyframes slideInUp100{
+    0%{
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes letterAni{
+    0% {
+        opacity: 0;
+        letter-spacing: -0.5em;
+      }
+    
+    100% {
+        opacity: 1;
+        letter-spacing: -0.01em;
+    }
+}
+@keyframes fadeIn{
+    0% {
+        opacity: 0;
+      }
+    
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes circleAni {
+    0%{
+        bottom: 0;
+    }
+    100%{
+        bottom: 50px;
+    }
+}
+
+
+
 /* header */
 header{
     display: flex;
@@ -29,12 +71,16 @@ header{
 }
 header .logo{}
 header .logo > a{
+    opacity: 0;
     display: block;
     font-size: 14px;
     font-weight: 700;
     color: #222;
     font-family: 'Cabin', sans-serif;
     visibility: hidden;
+}
+header.active .logo > a{
+    animation: letterAni 1s ease forwards;
 }
 
 /* 메인 */
@@ -70,6 +116,7 @@ header .logo > a{
     transform: translate(-50%, -50%);
 }*/
 .mv .txt p{
+    opacity: 0;
     margin-bottom: 60px;
     font-size:20px;
     font-weight:700;
@@ -77,7 +124,9 @@ header .logo > a{
     color:#222;
     font-family: 'Playfair Display', serif;
     position: relative;
-    visibility:hidden;
+}
+.mv.active .txt p{
+    animation:slideInUp100 1s ease forwards;
 }
 .mv .txt p:after{
     content: "";
@@ -103,18 +152,25 @@ header .logo > a{
     
 }
 .mv .txt figure{
+    opacity: 0;
     position: relative;
-    visibility:hidden;
+}
+.mv.active .txt figure{
+    animation:slideInUp100 1s 0.5s ease forwards;
 }
 .mv .txt figure img{
     max-width: 650px;
 }
 .mv .scroll{
+    opacity: 0;
     padding-bottom: 70px;
     position: absolute;
     left: 50%;
     bottom:0;
     transform: translateX(-50%);
+}
+.mv.active .scroll{
+    animation:fadeIn 1s 1s ease forwards;
 }
 .mv .scroll:before{
     content:"";
@@ -138,16 +194,9 @@ header .logo > a{
     left: 50%;
     bottom: 0;
     transform: translateX(-50%);
-    animation: circle_ani 0.8s alternate infinite;
+    animation: circleAni 0.8s alternate infinite;
 }
-@keyframes circle_ani {
-    0%{
-        bottom: 0;
-    }
-    100%{
-        bottom: 50px;
-    }
-}
+
 .mv .scroll button{
     font-size:16px;
     font-weight:700;
