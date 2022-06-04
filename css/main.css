@@ -77,7 +77,6 @@ header .logo > a{
     font-weight: 700;
     color: #222;
     font-family: 'Cabin', sans-serif;
-    visibility: hidden;
 }
 header.active .logo > a{
     animation: letterAni 1s ease forwards;
