@@ -34,6 +34,7 @@ header .logo > a{
     font-weight: 700;
     color: #222;
     font-family: 'Cabin', sans-serif;
+    visibility: hidden;
 }
 
 /* 메인 */
